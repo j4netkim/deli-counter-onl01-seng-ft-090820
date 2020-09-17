@@ -8,8 +8,4 @@ end
 
 def now_serving(katz_deli)
   katz_deli.length > 0
-  say = "Currently serving #{katz_deli[0]}."
-  katz_deli.shift
-  end
-  return say
-end
+
