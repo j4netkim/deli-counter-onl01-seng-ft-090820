@@ -1,8 +1,4 @@
-def line(array)
-  katz_deli = []
-  array.each do |name|
-    puts "The line is currently empty."
-
+katz_deli = []
 
 
 def take_a_number(katz_deli, name)
@@ -10,4 +6,12 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
-def now_serving()
+def now_serving(katz_deli)
+  (katz_deli.length > 0)
+    now_serving = katz_deli[0]
+    katz_deli.shift()
+    puts "Currently serving #{now_serving}."
+  end
+  puts "There is nobody waiting to be served!"
+end
+
