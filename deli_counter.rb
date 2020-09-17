@@ -8,4 +8,3 @@ end
 
 def now_serving(katz_deli)
   katz_deli.length > 0
-
