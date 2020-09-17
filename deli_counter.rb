@@ -7,10 +7,9 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  (katz_deli.length > 0)
-    now_serving = katz_deli[0]
-    katz_deli.shift()
-    return "Currently serving #{now_serving}."
+  katz_deli.length > 0
+  say = "Currently serving #{katz_deli[0]}."
+  katz_deli.shift
   end
-  return "There is nobody waiting to be served!"
+  return say
 end
