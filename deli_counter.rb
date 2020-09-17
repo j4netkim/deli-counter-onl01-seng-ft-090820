@@ -10,7 +10,7 @@ def now_serving(katz_deli)
   (katz_deli.length > 0)
     now_serving = katz_deli[0]
     katz_deli.shift()
-    puts "Currently serving #{now_serving}."
+    return "Currently serving #{now_serving}."
   end
-  puts "There is nobody waiting to be served!"
+  return "There is nobody waiting to be served!"
 end
